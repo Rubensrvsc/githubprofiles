@@ -1,15 +1,16 @@
+{% load static %}
 <html>
     <head>
         <title>Testes com HTML, CSS e Javascript</title>
         
-        <link rel="stylesheet" type="text/css" href="../styles/index.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'styles/index.css' %}">
         
     </head>
     <body>
       <nav id="menu-h">
         <ul class="menu-position">
           <li>
-        <a href="#home">Home</a>
+        <a href="#home">GitHub profiles</a>
       </li>
       <li >
         <a href="#news">News</a>
