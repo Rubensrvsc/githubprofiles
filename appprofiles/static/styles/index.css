@@ -40,3 +40,53 @@
     margin-right: 30%;
     margin-left: 7%;
   }
+
+  /*Input formulário*/
+
+  .formulario_input{
+    margin-top: 3.5%;
+  }
+
+  .titulo_formulario{
+    margin-bottom: 4%;
+    text-align: center;
+    font-family: "Trirong", serif;
+  }
+
+  .example{
+    margin:auto;
+    max-width:500px
+  }
+
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
