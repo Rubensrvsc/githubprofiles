@@ -1,5 +1,5 @@
 from .utils import *
-
+import requests
 
 def repositorio(nome):
-    return str(profiles.profile) + str(nome)
+    return requests.get(profile + str(nome)).json()
