@@ -29,6 +29,39 @@
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
       </div>
+
+      <!---
+      <div class="card">
+
+        <div class="foto">
+          <img src={{repositorio.avatar_url}} alt="Avatar" style="width:100%">
+        </div>
+        
+        <div class="container">
+          <h4><b>Nome: {{repositorio.login}}</b></h4>
+          <p>followers: {{repositorio.followers}}</p>
+          <p>following: {{repositorio.following}}</p>
+        </div>
+      </div>
+      --->
+
+      <div class="container">
+        <div class="colum">
+          <div>
+            <h4><b>Nome: {{repositorio.login}}</b></h4>
+          </div>
+          <div>
+            <p>followers: {{repositorio.followers}}</p>
+          </div>
+          <div>
+            <p>following: {{repositorio.following}}</p>
+          </div>
+        </div>
+        <div class="image">
+          <img src={{repositorio.avaar_url}}>
+        </div>
+      
+      </div>
      
     </body>
 </html>
