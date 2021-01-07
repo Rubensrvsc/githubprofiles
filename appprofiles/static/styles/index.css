@@ -109,7 +109,7 @@
 .colum div {
   background-color: aqua;
   font-size: 1.4rem;
-  padding: 5px 0;
+  padding: 2px 0;
 }
 
 .card {
@@ -118,4 +118,5 @@
 
 .image {
   flex: 1;
+  width: 70%;
 }
