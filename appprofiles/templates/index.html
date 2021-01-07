@@ -1,7 +1,7 @@
 {% load static %}
 <html>
     <head>
-        <title>Testes com HTML, CSS e Javascript</title>
+        <title>Github Profiles</title>
         
         <link rel="stylesheet" type="text/css" href="{% static 'styles/index.css' %}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -46,21 +46,25 @@
       --->
 
       <div class="container">
+        <div class="image">
+          <img src={{repositorio.avatar_url}}>
+        </div>
+      
         <div class="colum">
           <div>
             <h4><b>Nome: {{repositorio.login}}</b></h4>
           </div>
           <div>
-            <p>followers: {{repositorio.followers}}</p>
+            <p>Followers: {{repositorio.followers}}</p>
           </div>
           <div>
-            <p>following: {{repositorio.following}}</p>
+            <p>Following: {{repositorio.following}}</p>
+          </div>
+          <div>
+            <p>Repositories: {{repositorio.following}}</p>
           </div>
         </div>
-        <div class="image">
-          <img src={{repositorio.avaar_url}}>
-        </div>
-      
+        
       </div>
      
     </body>
