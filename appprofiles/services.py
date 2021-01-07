@@ -1,8 +1,8 @@
 from .utils import *
 import requests
 
-def profile(name):
+def profiles(name):
     return requests.get(profile + str(name)).json()
 
 def repositories(name):
-    return requests.get(profile + str(name)+ "/repos").json()
+    return requests.get(profile + str(name) + '/repos').json()
