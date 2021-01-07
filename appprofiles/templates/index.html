@@ -66,8 +66,16 @@
         </div>
         <div>
           <h3>Últimos reposiórios</h3>
-          {%for r in repositories %}
+          <ul>
+          {%for r in repository %}
+          
+            <li>
+              <a href={{r.svn_url}}>{{r.name}}</a>
+            </li>
+            <br>
+          
           {% endfor %}
+        </ul>
         </div>
         
       </div>
