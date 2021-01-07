@@ -10,4 +10,4 @@ class IndexView(View):
     def get(self, request):
         #print(request.GET.get('search'))
         print(profile(request.GET.get('search')))
-        return render(request, self.template_name,{'repositorio':profile(request.GET.get('search'))})
+        return render(request, self.template_name,{'profile':profile(request.GET.get('search'))})
