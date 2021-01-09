@@ -121,3 +121,9 @@
   width: 20%;
   height: 20%;
 }
+
+/* Toggle */
+
+.slider.round {
+  border-radius: 34px;
+}
