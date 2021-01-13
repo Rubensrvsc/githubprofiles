@@ -11,9 +11,8 @@ class IndexView(View):
 
     def get(self, request):
         #print(request.GET.get('search'))
-        print(repositories(request.GET.get('search')))
+        if repositories(request.GET.get('search')) == 0:
+            return HttpResponse("Sem repositorio")
         return render(request, self.template_name,{'profile':profiles(request.GET.get('search')),
         'repository':repositories(request.GET.get('search'))})
 
-class ListRepos(ListView):
-    pass

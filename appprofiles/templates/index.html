@@ -32,7 +32,7 @@
         <form class="example">
           <h2 class="titulo_formulario">Procura de usuário github</h2>
           <input type="text" placeholder="Digite o nome do usuário..." name="search" id="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
+          <button type="submit" ><i class="fa fa-search"></i></button>
         </form>
       </div>
 
@@ -50,8 +50,39 @@
         </div>
       </div>
       --->
-      {% block content %}
-
-      {% endblock content %}
+      <div class="container">
+        <div class="image">
+          <img src={{profile.avatar_url}} height="200" width="200">
+        </div>
+      
+        <div class="colum">
+          <div>
+            <h5><b>Nome: {{profile.login}}</b></h5>
+          </div>
+          <div>
+            <p>Followers: {{profile.followers}}</p>
+          </div>
+          <div>
+            <p>Following: {{profile.following}}</p>
+          </div>
+          <div>
+            <p>Repositories: {{profile.public_repos}}</p>
+          </div>
+        </div>
+        <div>
+          <h3>Últimos reposiórios</h3>
+          <ul>
+          {%for r in repository %}
+          
+            <li>
+              <a href={{r.svn_url}}>{{r.name}}</a>
+            </li>
+            <br>
+          
+          {% endfor %}
+        </ul>
+        </div>
+        
+      </div>
     </body>
 </html>
